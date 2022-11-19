@@ -19,7 +19,7 @@
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img class="bi me-2" src="../frontend_image/delBusLogo.png" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <img class="bi me-2" src="./frontend_image/delBusLogo.png" width="40" height="32" role="img" aria-label="Bootstrap">
                     <use xlink:href="#bootstrap" />
                     </img>
                 </a>
@@ -27,7 +27,7 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
                     <li><a href="aboutUs.php" class="nav-link px-2 text-secondary">About</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+                    <li><a href="contactUs.php" class="nav-link px-2 text-white">Contact Us</a></li>
                     <li><a href="index.php" class="nav-link px-2 text-white">Services</a></li> 
                     <li><a href="#" class="nav-link px-2 text-white"></a></li>
                 </ul>
@@ -62,7 +62,7 @@
             <div class="row welcome text-center">
                 <div class="col-12">
                     <h2 class="display-6">CONTACT US</h2>
-                    <img src="../frontend_image/portfolio4.jpg" class="w-100 h-90 py-2" alt="many people interacting in a hall">
+                    <img src="./frontend_image/portfolio4.jpg" class="w-100 h-90 py-2" alt="many people interacting in a hall">
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
                         <!--<img class="card-img-top" src="images/black.png">-->
                         <div class="card-body">
                             <h4 class="card-title">KWAME OSEI-TUTU</h4>
-                            <p class="card-text"><a href="mailto:kwame.osei-tutu@ashesi.edu.gh">kwame.osei-tutu@ashesi.edu.gh</a></p>
+                            <p class="card-text"><a href="mailto:kwame.oseitutu@ashesi.edu.gh">kwame.oseitutu@ashesi.edu.gh</a></p>
                         </div>
                     </div>
                 </div>
@@ -135,6 +135,7 @@
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="aboutUs.php" class="nav-link p-0 text-muted">Home</a></li>
                             <li class="nav-item mb-2"><a href="aboutUs.php" class="nav-link p-0 text-muted">About</a></li>
+                            <li class="nav-item mb-2"><a href="contactUs.php" class="nav-link p-0 text-muted">Contact Us</a></li>
                             <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-muted">Services</a></li>
                         </ul>
                     </div>
@@ -146,7 +147,7 @@
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">User Experience Design</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Enterprise Portfolio and Program Management</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agile and Cost Management</a></li>
-                            <li class="nav-item mb-2"><a href="aboutUs.php" class="nav-link p-0 text-muted">Back to top</a></li>
+                            <li class="nav-item mb-2"><a href="contactUs.php" class="nav-link p-0 text-muted">Back to top</a></li>
                         </ul>
                     </div>
 
