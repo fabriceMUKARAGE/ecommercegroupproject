@@ -32,8 +32,8 @@ require "config/constants.php";
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
 			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-				<li><a href="index.php"><span class="glyphicon "></span>About</a></li>
-				<li><a href="index.php"><span class="glyphicon"></span>contact us</a></li>
+				<li><a href="aboutUs.php"><span class="glyphicon "></span>About</a></li>
+				<li><a href="contactUs.php"><span class="glyphicon"></span>Contact us</a></li>
 				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span> Services</a></li>
 			</ul>
 		</div>
