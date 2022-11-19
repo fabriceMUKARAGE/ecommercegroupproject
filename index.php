@@ -30,13 +30,17 @@ if(isset($_SESSION["uid"])){
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="index.php" class="navbar-brand">Delightful business</a>
+				<a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="bi me-2" src="./frontend_image/delBusLogo.png" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap" />
+                    </img>
+                </a>
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="aboutUs.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 				<li><a href="aboutUs.php"><span class="glyphicon "></span>About</a></li>
-				<li><a href="#"><span class="glyphicon "></span>Contact Us</a></li>
+				<li><a href="contactUs.php"><span class="glyphicon "></span>Contact Us</a></li>
 				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span> Services</a></li>
 			</ul>
 			<form class="navbar-form navbar-left">
@@ -125,51 +129,3 @@ if(isset($_SESSION["uid"])){
 	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
