@@ -8,10 +8,10 @@
 
       <div class="row">
       	<div class="col-10">
-      		<h2>Product List</h2>
+      		<h2>Services List</h2>
       	</div>
       	<div class="col-2">
-      		<a href="#" data-toggle="modal" data-target="#add_product_modal" class="btn btn-warning btn-sm">Add Product</a>
+      		<a href="#" data-toggle="modal" data-target="#add_product_modal" class="btn btn-warning btn-sm">Add Service</a>
       	</div>
       </div>
       
@@ -23,7 +23,6 @@
               <th>Name</th>
               <th>Image</th>
               <th>Price</th>
-              <th>Quantity</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -43,7 +42,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Service</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -53,44 +52,38 @@
         	<div class="row">
         		<div class="col-12">
         			<div class="form-group">
-		        		<label>Product Name</label>
-		        		<input type="text" name="product_name" class="form-control" placeholder="Enter Product Name">
+		        		<label>Service Name</label>
+		        		<input type="text" name="product_name" class="form-control" placeholder="Enter service Name">
 		        	</div>
         		</div>
 
         		<div class="col-12">
         			<div class="form-group">
-		        		<label>Product Description</label>
-		        		<textarea class="form-control" name="product_desc" placeholder="Enter product desc"></textarea>
-		        	</div>
-        		</div>
-            <div class="col-12">
-              <div class="form-group">
-                <label>Product Qty</label>
-                <input type="number" name="product_qty" class="form-control" placeholder="Enter Product Quantity">
-              </div>
-            </div>
-        		<div class="col-12">
-        			<div class="form-group">
-		        		<label>Product Price</label>
-		        		<input type="number" name="product_price" class="form-control" placeholder="Enter Product Price">
+		        		<label>Service Description</label>
+		        		<textarea class="form-control" name="product_desc" placeholder="Enter Service desc"></textarea>
 		        	</div>
         		</div>
         		<div class="col-12">
         			<div class="form-group">
-		        		<label>Product Keywords <small>(eg: apple, iphone, mobile)</small></label>
-		        		<input type="text" name="product_keywords" class="form-control" placeholder="Enter Product Keywords">
+		        		<label>Service Price</label>
+		        		<input type="number" name="product_price" class="form-control" placeholder="Enter Service Price">
 		        	</div>
         		</div>
         		<div class="col-12">
         			<div class="form-group">
-		        		<label>Product Image <small>(format: jpg, jpeg, png)</small></label>
+		        		<label>Service Keywords <small>(eg: design, management, strategy)</small></label>
+		        		<input type="text" name="product_keywords" class="form-control" placeholder="Enter Service Keywords">
+		        	</div>
+        		</div>
+        		<div class="col-12">
+        			<div class="form-group">
+		        		<label>Service Image <small>(format: jpg, jpeg, png)</small></label>
 		        		<input type="file" name="product_image" class="form-control">
 		        	</div>
         		</div>
         		<input type="hidden" name="add_product" value="1">
         		<div class="col-12">
-        			<button type="button" class="btn btn-primary add-product">Add Product</button>
+        			<button type="button" class="btn btn-primary add-product">Add Service</button>
         		</div>
         	</div>
         	
@@ -106,7 +99,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Service</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -116,38 +109,33 @@
           <div class="row">
             <div class="col-12">
               <div class="form-group">
-                <label>Product Name</label>
-                <input type="text" name="e_product_name" class="form-control" placeholder="Enter Product Name">
+                <label>Service Name</label>
+                <input type="text" name="e_product_name" class="form-control" placeholder="Enter Service Name">
               </div>
             </div>
 
             <div class="col-12">
               <div class="form-group">
-                <label>Product Description</label>
-                <textarea class="form-control" name="e_product_desc" placeholder="Enter product desc"></textarea>
+                <label>Service Description</label>
+                <textarea class="form-control" name="e_product_desc" placeholder="Enter Service desc"></textarea>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <label>Service Price</label>
+                <input type="number" name="e_product_price" class="form-control" placeholder="Enter Service Price">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Product Qty</label>
-                <input type="number" name="e_product_qty" class="form-control" placeholder="Enter Product Quantity">
+                <label>Service Keywords <small>(eg: design, management, strategy)</small></label>
+                <input type="text" name="e_product_keywords" class="form-control" placeholder="Enter Service Keywords">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Product Price</label>
-                <input type="number" name="e_product_price" class="form-control" placeholder="Enter Product Price">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <label>Product Keywords <small>(eg: apple, iphone, mobile)</small></label>
-                <input type="text" name="e_product_keywords" class="form-control" placeholder="Enter Product Keywords">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <label>Product Image <small>(format: jpg, jpeg, png)</small></label>
+                <label>Service Image <small>(format: jpg, jpeg, png)</small></label>
                 <input type="file" name="e_product_image" class="form-control">
                 <img src="../product_images/1.0x0.jpg" class="img-fluid" width="50">
               </div>
@@ -155,7 +143,7 @@
             <input type="hidden" name="pid">
             <input type="hidden" name="edit_product" value="1">
             <div class="col-12">
-              <button type="button" class="btn btn-primary submit-edit-product">Add Product</button>
+              <button type="button" class="btn btn-primary submit-edit-product">Add Service</button>
             </div>
           </div>
           

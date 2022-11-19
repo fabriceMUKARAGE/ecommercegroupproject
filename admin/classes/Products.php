@@ -14,7 +14,7 @@ class Products
 	}
 
 	public function getProducts(){
-		$q = $this->con->query("SELECT product_id, product_title, product_price,product_qty, product_desc, product_image, product_keywords FROM products");
+		$q = $this->con->query("SELECT product_id, product_title, product_price, product_desc, product_image, product_keywords FROM products");
 		
 		$products = [];
 		if ($q->num_rows > 0) {
@@ -31,7 +31,6 @@ class Products
 
 	public function addProduct($product_name,
 								$product_desc,
-								$product_qty,
 								$product_price,
 								$product_keywords,
 								$file){
@@ -49,9 +48,9 @@ class Products
 			if ($file['size'] > (1024 * 2)) {
 				
 				$uniqueImageName = time()."_".$file['name'];
-				if (move_uploaded_file($file['tmp_name'], $_SERVER['DOCUMENT_ROOT']."/ecommerce-app-h/product_images/".$uniqueImageName)) {
+				if (move_uploaded_file($file['tmp_name'], $_SERVER['DOCUMENT_ROOT']."/group_11/product_images/".$uniqueImageName)) {
 					
-					$q = $this->con->query("INSERT INTO `products`(`product_title`, `product_qty`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES ( '$product_name', '$product_qty', '$product_price', '$product_desc', '$uniqueImageName', '$product_keywords')");
+					$q = $this->con->query("INSERT INTO `products`(`product_title`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES ( '$product_name', '$product_price', '$product_desc', '$uniqueImageName', '$product_keywords')");
 
 					if ($q) {
 						return ['status'=> 202, 'message'=> 'Product Added Successfully..!'];
@@ -78,7 +77,6 @@ class Products
 	public function editProductWithImage($pid,
 										$product_name,
 										$product_desc,
-										$product_qty,
 										$product_price,
 										$product_keywords,
 										$file){
@@ -100,7 +98,6 @@ class Products
 					
 					$q = $this->con->query("UPDATE `products` SET 
 										`product_title` = '$product_name', 
-										`product_qty` = '$product_qty', 
 										`product_price` = '$product_price', 
 										`product_desc` = '$product_desc', 
 										`product_image` = '$uniqueImageName', 
@@ -130,14 +127,12 @@ class Products
 	public function editProductWithoutImage($pid,
 										$product_name,
 										$product_desc,
-										$product_qty,
 										$product_price,
 										$product_keywords){
 
 		if ($pid != null) {
 			$q = $this->con->query("UPDATE `products` SET 
 										`product_title` = '$product_name', 
-										`product_qty` = '$product_qty', 
 										`product_price` = '$product_price', 
 										`product_desc` = '$product_desc',
 										`product_keywords` = '$product_keywords'
@@ -187,7 +182,6 @@ if (isset($_POST['add_product'])) {
 	extract($_POST);
 	if (!empty($product_name) 
 	&& !empty($product_desc)
-	&& !empty($product_qty)
 	&& !empty($product_price)
 	&& !empty($product_keywords)
 	&& !empty($_FILES['product_image']['name'])) {
@@ -196,7 +190,6 @@ if (isset($_POST['add_product'])) {
 		$p = new Products();
 		$result = $p->addProduct($product_name,
 								$product_desc,
-								$product_qty,
 								$product_price,
 								$product_keywords,
 								$_FILES['product_image']);
@@ -224,7 +217,6 @@ if (isset($_POST['edit_product'])) {
 	if (!empty($pid)
 	&& !empty($e_product_name) 
 	&& !empty($e_product_desc)
-	&& !empty($e_product_qty)
 	&& !empty($e_product_price)
 	&& !empty($e_product_keywords) ) {
 		
@@ -235,7 +227,6 @@ if (isset($_POST['edit_product'])) {
 			$result = $p->editProductWithImage($pid,
 								$e_product_name,
 								$e_product_desc,
-								$e_product_qty,
 								$e_product_price,
 								$e_product_keywords,
 								$_FILES['e_product_image']);
@@ -243,7 +234,6 @@ if (isset($_POST['edit_product'])) {
 			$result = $p->editProductWithoutImage($pid,
 								$e_product_name,
 								$e_product_desc,
-								$e_product_qty,
 								$e_product_price,
 								$e_product_keywords);
 		}

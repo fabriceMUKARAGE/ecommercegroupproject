@@ -27,7 +27,7 @@
           <li class="nav-item">
             <a class="nav-link <?php echo ($page == 'products.php') ? 'active' : ''; ?>" href="products.php">
               <span data-feather="shopping-cart"></span>
-              Products
+              Services
             </a>
           </li>
 

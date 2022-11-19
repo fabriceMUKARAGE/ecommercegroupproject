@@ -64,7 +64,7 @@ if(isset($_POST["getProduct"])){
 			echo "
 				<div class='alert alert-warning'>
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Product is already added into the cart Continue Shopping..!</b>
+						<b>Service is already added to subscription.!</b>
 				</div>
 			";//not in video
 		} else {
@@ -75,7 +75,7 @@ if(isset($_POST["getProduct"])){
 				echo "
 					<div class='alert alert-success'>
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Product is Added..!</b>
+						<b>Service is Added..!</b>
 					</div>
 				";
 			}
@@ -87,7 +87,7 @@ if(isset($_POST["getProduct"])){
 				echo "
 					<div class='alert alert-warning'>
 							<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-							<b>Product is already added into the cart Continue Shopping..!</b>
+							<b>Service is already added.!</b>
 					</div>";
 					exit();
 			}
@@ -99,7 +99,7 @@ if(isset($_POST["getProduct"])){
 				echo "
 					<div class='alert alert-success'>
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Your product has been added to cart!</b>
+						<b>Your Service has been added to cart!</b>
 					</div>
 				";
 				exit();
