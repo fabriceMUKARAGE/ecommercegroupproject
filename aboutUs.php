@@ -24,29 +24,47 @@ session_start();
 <body>
     <div class="b-example-divider"></div>
 
-    <div class="wait overlay">
-	<div class="loader"></div>
-</div>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">	
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
-					<span class="sr-only">navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="index.php" class="navbar-brand">Delightful business</a>
-			</div>
-		<div class="collapse navbar-collapse" id="collapse">
-			<ul class="nav navbar-nav">
-				<li><a href="aboutUs.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-				<li><a href="aboutUs.php"><span class="glyphicon "></span>About</a></li>
-				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span> Services</a></li>
-			</ul>
-		</div>
-	</div>
-</div>	
+    <!--Header of Page-->
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="bi me-2" src="../frontend_image/delBusLogo.png" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap" />
+                    </img>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="aboutUs.php" class="nav-link px-2 text-secondary">About</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+                    <li><a href="index.php" class="nav-link px-2 text-white">Services</a></li> 
+                    <li><a href="#" class="nav-link px-2 text-white"></a></li>
+                </ul>
+
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Login/Register</a>
+                    <ul class="dropdown-menu">
+                        <div style="width:300px;">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">Login</div>
+                                <div class="panel-heading">
+                                    <form onsubmit="return false" id="login">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" name="email" id="email" required/>
+                                        <label for="email">Password</label>
+                                        <input type="password" class="form-control" name="password" id="password" required/>
+                                        <p><br/></p>
+                                        <input type="submit" class="btn btn-warning" value="Login">
+                                        <a href="customer_registration.php?register=1" style="color:white; text-decoration:none;">Create Account Now</a>
+                                    </form>
+                                </div>
+                                <div class="panel-footer" id="e_msg"></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </div>
+        </div>
     </header>
 
     <main>
