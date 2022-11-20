@@ -78,20 +78,4 @@ require "config/constants.php";
 <script>var CURRENCY = '<?php echo CURRENCY; ?>';</script>
 </body>	
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		
