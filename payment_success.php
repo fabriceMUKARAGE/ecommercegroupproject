@@ -40,7 +40,7 @@ if (isset($_GET["st"])) {
 					<html>
 						<head>
 							<meta charset="UTF-8">
-							<title>Ecommerce</title>
+							<title>Success</title>
 							<link rel="stylesheet" href="css/bootstrap.min.css"/>
 							<script src="js/jquery2.js"></script>
 							<script src="js/bootstrap.min.js"></script>
@@ -53,10 +53,10 @@ if (isset($_GET["st"])) {
 						<div class="navbar navbar-inverse navbar-fixed-top">
 							<div class="container-fluid">	
 								<div class="navbar-header">
-									<a href="#" class="navbar-brand">Ecommerce</a>
+									<a href="#" class="navbar-brand">Delightful Business</a>
 								</div>
 								<ul class="nav navbar-nav">
-									<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+									<li><a href="homepage.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
 									<li><a href="profile.php"><span class="glyphicon glyphicon-modal-window"></span>Product</a></li>
 								</ul>
 							</div>
