@@ -26,13 +26,13 @@
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="homepage.php" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="aboutUs.php" class="nav-link px-2 text-secondary">About</a></li>
-                    <li><a href="contactUs.php" class="nav-link px-2 text-white">Contact Us</a></li>
+                    <li><a href="aboutUs.php" class="nav-link px-2 text-white">About</a></li>
+                    <li><a href="contactUs.php" class="nav-link px-2 text-secondary">Contact Us</a></li>
                     <li><a href="index.php" class="nav-link px-2 text-white">Services</a></li> 
                     <li><a href="#" class="nav-link px-2 text-white"></a></li>
                 </ul>
 
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Login/Register</a>
+                <li><a href="login_form.php" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Login/Register</a>
                     <ul class="dropdown-menu">
                         <div style="width:300px;">
                             <div class="panel panel-primary">
@@ -174,7 +174,7 @@
                 </div>
 
                 <div class="d-flex justify-content-between py-4 my-4 border-top">
-                    <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+                    <p>&copy; 2022 Company, Inc. All rights reserved.</p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a class="link-dark" href="https://twitter.com"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
                         <li class="ms-3"><a class="link-dark" href="https://instagram.com"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>

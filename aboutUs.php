@@ -42,7 +42,7 @@ session_start();
                     <li><a href="#" class="nav-link px-2 text-white"></a></li>
                 </ul>
 
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Login/Register</a>
+                <li><a href="login_form.php" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Login/Register</a>
                     <ul class="dropdown-menu">
                         <div style="width:300px;">
                             <div class="panel panel-primary">
