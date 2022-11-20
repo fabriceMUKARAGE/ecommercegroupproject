@@ -35,9 +35,9 @@ session_start();
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="homepage.php" class="nav-link px-2 text-white">Home</a></li>
                     <li><a href="aboutUs.php" class="nav-link px-2 text-secondary">About</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+                    <li><a href="contactUs.php" class="nav-link px-2 text-white">Contact Us</a></li>
                     <li><a href="index.php" class="nav-link px-2 text-white">Services</a></li> 
                     <li><a href="#" class="nav-link px-2 text-white"></a></li>
                 </ul>
@@ -155,10 +155,10 @@ session_start();
                     <div class="col-2">
                         <h4>Services</h4>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Business Strategies</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">User Experience Design</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Enterprise Portfolio and Program Management</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agile and Cost Management</a></li>
+                            <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-muted">Business Strategies</a></li>
+                            <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-muted">User Experience Design</a></li>
+                            <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-muted">Enterprise Portfolio and Program Management</a></li>
+                            <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-muted">Agile and Cost Management</a></li>
                             <li class="nav-item mb-2"><a href="aboutUs.php" class="nav-link p-0 text-muted">Back to top</a></li>
                         </ul>
                     </div>
