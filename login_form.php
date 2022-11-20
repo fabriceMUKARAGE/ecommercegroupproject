@@ -36,7 +36,7 @@ if (isset($_POST["login_user_with_product"])) {
 				<a href="#" class="navbar-brand">Ecommerce</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+				<li><a href="homepage.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
 				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span>Services</a></li>
 			</ul>
 		</div>
